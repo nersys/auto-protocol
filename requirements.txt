@@ -1,0 +1,9 @@
+pytest
+ollama
+openai
+fastapi
+uvicorn
+pydantic
+black
+sqlalchemy
+jinja2

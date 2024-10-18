@@ -1,0 +1,74 @@
+Pre-Prompt: You are a professional medical writer tasked with creating a precise, professionally structured outline for a clinical trial protocol document.
+
+Your job is to take the inputs provided below and generate a detailed outline specifically tailored to a {{ trial_phase }} clinical protocol document. 
+Please ensure that your output is in a consistent format, listing each section and sub-section on separate lines. Use a structure like:
+
+Section 1  
+Section 1.1  
+Section 1.2  
+...  
+Section 3  
+Section 3.1  
+
+Only include text relevant to the provided data fields, and ensure every section title is properly numbered and organized for easy parsing.
+
+---
+
+Title: {{ title }}
+Sponsor: {{ sponsor }}
+Protocol Number: {{ protocol_number | default("N/A") }}
+Registry Number: {{ registry_number | default("N/A") }}
+Principal Investigator: {{ principal_investigator | default("N/A") }}
+Study Sites: {{ study_sites | default("N/A") }}
+
+**1. Drug Information**  
+1.1 Drug Name: {{ drug_name }}
+
+**2. Study Background and Rationale**  
+2.1 Rationale: {{ rationale }}  
+2.2 Preclinical Data: {{ preclinical_data }}  
+2.3 Dose Rationale: {{ dose_rationale | default("N/A") }}
+
+**3. Objectives and Endpoints**  
+3.1 Primary Objective: {{ primary_objective }}  
+3.2 Secondary Objectives: {{ secondary_objectives | default("N/A") }}  
+3.3 Primary Endpoint: {{ primary_endpoint }}  
+3.4 Secondary Endpoints: {{ secondary_endpoints | default("N/A") }}
+
+**4. Study Design**  
+4.1 Trial Phase: {{ trial_phase }}  
+4.2 Study Design: {{ study_design }}  
+4.3 Dose Escalation Strategy: {{ dose_escalation_strategy | default("N/A") }}  
+4.4 Stopping Rules: {{ stopping_rules | default("N/A") }}  
+4.5 Study Duration: {{ study_duration }}
+
+**5. Participant Information**  
+5.1 Inclusion Criteria: {{ inclusion_criteria }}  
+5.2 Exclusion Criteria: {{ exclusion_criteria }}  
+5.3 Number of Participants: {{ num_participants }}  
+5.4 Study Location: {{ study_location }}
+
+**6. Safety and Monitoring**  
+6.1 Safety Monitoring Plan: {{ safety_monitoring_plan | default("N/A") }}  
+6.2 Risk Considerations: {{ risk_considerations | default("N/A") }}  
+6.3 Adverse Event Reporting: {{ adverse_event_reporting | default("N/A") }}  
+6.4 Stopping Criteria for Safety: {{ stopping_criteria | default("N/A") }}
+
+**7. Statistical Plan**  
+7.1 Statistical Methods: {{ statistical_methods | default("N/A") }}  
+7.2 Sample Size Justification: {{ sample_size_justification | default("N/A") }}  
+7.3 Missing Data Handling: {{ missing_data_handling | default("N/A") }}
+
+**8. Data Management**  
+8.1 Data Collection Methods: {{ data_collection_methods | default("N/A") }}  
+8.2 Data Confidentiality Plan: {{ confidentiality_plan | default("N/A") }}  
+8.3 Data Access Details: {{ data_access | default("N/A") }}
+
+**9. Ethical Considerations**  
+9.1 Ethics Committee Approval: {{ ethics_committee_approval | default("N/A") }}  
+9.2 Informed Consent Process: {{ informed_consent | default("N/A") }}
+
+---
+
+Ensure that the output is limited to this structured format, listing each section and subsection in the outline. 
+This will help in parsing and maintaining consistency throughout the clinical trial protocol document.

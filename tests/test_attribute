@@ -1,0 +1,35 @@
+title: Evaluation of DrugX for Long-term Safety and Efficacy in Hypertension Management
+sponsor: PharmaCorp International
+protocol_number: PC-HT-2024-001
+registry_number: NCT01234567
+principal_investigator: Dr. John Smith, MD, PhD
+study_sites: New York General Hospital, Chicago Medical Center, Los Angeles Clinical Research Facility
+drug_name: DrugX
+rationale: To assess the long-term effects of DrugX in managing hypertension in a diverse population.
+preclinical_data: Extensive animal studies have shown that DrugX effectively reduces blood pressure with minimal adverse effects.
+dose_rationale: Based on prior studies, the dose range has been set at 50-100mg daily to maintain therapeutic efficacy.
+primary_objective: To evaluate the safety profile of DrugX in long-term use.
+secondary_objectives: To assess the efficacy of DrugX in sustained blood pressure control over a 12-month period.
+primary_endpoint: Incidence of major cardiovascular adverse events.
+secondary_endpoints: Change in systolic and diastolic blood pressure from baseline, incidence of minor adverse events.
+trial_phase: Phase 4
+study_design: Multicenter, randomized, open-label, parallel-group study.
+dose_escalation_strategy: Dose adjustments based on patient response and tolerance, capped at 100mg daily.
+stopping_rules: Trial will be stopped if >10% of participants experience severe adverse events.
+study_duration: 12 months of treatment, with a 6-month follow-up period.
+inclusion_criteria: Adults aged 18-75 with diagnosed hypertension.
+exclusion_criteria: Individuals with a history of stroke, heart failure, or renal impairment.
+num_participants: 500
+study_location: United States
+safety_monitoring_plan: Monthly safety reviews by an independent monitoring board.
+risk_considerations: Potential risk of dizziness and hypotension due to blood pressure lowering effects.
+adverse_event_reporting: All adverse events to be reported to the FDA within 15 days.
+stopping_criteria: Protocol-specific stopping rules for individual patients with adverse reactions.
+statistical_methods: Kaplan-Meier survival analysis, Cox regression for hazard ratios.
+sample_size_justification: Based on an estimated 5% annual adverse event rate, 500 participants provide 80% power.
+missing_data_handling: Last observation carried forward (LOCF) method for missing blood pressure data.
+data_collection_methods: Electronic health records, patient diaries, and in-clinic assessments.
+confidentiality_plan: Data anonymization and restricted access through secured servers.
+data_access: Data accessible only to study investigators and authorized personnel.
+ethics_committee_approval: Approved by Institutional Review Boards at all study sites.
+informed_consent: Written informed consent obtained from all participants before study initiation.

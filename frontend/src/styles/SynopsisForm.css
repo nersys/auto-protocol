@@ -1,0 +1,193 @@
+/* SynopsisForm.css */
+
+/* Adding a dynamic wave-like background effect */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 200% 200%;
+  animation: waveEffect 15s ease infinite;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Wave animation keyframes */
+@keyframes waveEffect {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Centering the form container */
+.App {
+  max-width: 900px;
+  width: 100%; /* Ensures it scales properly on smaller screens */
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Add a blur effect */
+  overflow-y: auto; /* In case the content overflows */
+  max-height: 90vh; /* Prevent overflow beyond the viewport */
+}
+
+/* Input and Textarea Styling */
+input[type="text"],
+textarea {
+  width: 100%; /* Make the input fields take full width of the container */
+  padding: 12px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Add hover and focus effects to inputs */
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Button and Spinner Layout */
+.button-spinner-wrapper {
+  display: flex;
+  align-items: center; /* Horizontally align button and spinner */
+}
+
+/* Button styling */
+.primary-button,
+.secondary-button {
+  padding: 12px 20px;
+  margin: 15px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded buttons */
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+  margin-right: 10px; /* Space between button and spinner */
+}
+
+.secondary-button {
+  background-color: #6c757d;
+}
+
+/* Button hover effect */
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+  opacity: 0.9;
+}
+
+/* Spinner styling */
+.spinner-container {
+  display: flex;
+  align-items: center; /* Vertically align spinner */
+  margin-left: 10px; /* Space between button and spinner */
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Light grey background for spinner */
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #007bff; /* Consistent blue color */
+  border-right-color: #ff9a9e; /* Adding a gradient effect for a vibrant look */
+  animation: spin 1s ease infinite;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add glowing shadow effect */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Confirmation message styling */
+.Confirmation {
+  text-align: center;
+  color: green;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Input Textarea Scaling */
+textarea {
+  min-height: 120px; /* Adjusted height for better visibility */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+
+/* Optional: Customize fonts if desired */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  color: #333;
+  text-align: left;
+}
+
+/* Ensure the form fits on smaller screens */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

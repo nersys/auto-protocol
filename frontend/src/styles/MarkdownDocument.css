@@ -1,0 +1,95 @@
+.synopsis-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure the content is centered vertically */
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color for the document */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent content from spilling outside the viewport */
+}
+
+.document-content {
+  width: 100%;
+  max-width: 800px; /* Ensure the content doesn't overflow horizontally */
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 90vh; /* Allow some space for padding */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+}
+
+/* Heading styles inside the document */
+.document-content h1,
+.document-content h2,
+.document-content h3 {
+  color: #333;
+  margin-top: 1.5em;
+}
+
+.document-content p {
+  color: #555;
+  word-wrap: break-word; /* Ensure long words don't overflow the container */
+}
+
+.document-content hr {
+  border: 1px solid #ddd;
+  margin: 1.5em 0;
+}
+
+/* Table Styling */
+.document-content table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto; /* Allow horizontal scrolling if the table overflows */
+}
+
+.document-content th,
+.document-content td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.document-content th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Scrollbar styling for better aesthetics */
+.document-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.document-content::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+/* Ensuring responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .document-content {
+    padding: 20px;
+    max-width: 100%;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .document-content table {
+    font-size: 12px;
+  }
+
+  .document-content h1 {
+    font-size: 24px;
+  }
+
+  .document-content h2 {
+    font-size: 20px;
+  }
+
+  .document-content h3 {
+    font-size: 18px;
+  }
+}

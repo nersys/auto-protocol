@@ -1,0 +1,66 @@
+/* HomePage.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #4A90E2, #50C9C3);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.home-page {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffffd9;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.home-page h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.select-container {
+  margin-top: 15px;
+}
+
+.select-container .css-1okebmr-indicatorSeparator {
+  display: none;
+}
+
+.select-container .css-1wa3eu0-placeholder {
+  color: #aaa;
+}
+
+.select-container .css-1pahdxg-control {
+  border-radius: 8px;
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  transition: all 0.3s ease;
+}
+
+.select-container .css-1pahdxg-control:hover {
+  border-color: #357ABD;
+}
+
+.select-container .css-26l3qy-menu {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.select-container .css-yt9ioa-option {
+  background-color: white;
+  color: #4A90E2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select-container .css-yt9ioa-option:hover {
+  background-color: #4A90E2;
+  color: white;
+}
